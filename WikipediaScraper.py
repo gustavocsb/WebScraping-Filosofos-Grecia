@@ -28,7 +28,7 @@ coluna_dados = tabela.find_all('tr')
 for linha in coluna_dados[1:]:
     linha_dados = linha.find_all('td')
     individual_linha_dados = [data.text.strip() for data in linha_dados]
-    # Corrigindo 2 linhas onde não estava puxando a última coluna 'Notas', onde estava sem dados no site
+    # Corrigindo 2 linhas onde não estava puxando a última coluna 'Notas', sem dados no site
     while len(individual_linha_dados) < len(df.columns):
         individual_linha_dados.append('')
 

@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-import roman
+import pandas as pd
 
 url = 'https://pt.wikipedia.org/wiki/Lista_de_fil%C3%B3sofos_da_Gr%C3%A9cia_Antiga'
 pagina = requests.get(url)
@@ -17,8 +17,6 @@ tabela = soup.find_all('table')[1]
 titulos = tabela.find_all('th')
 
 tabela_titulos = [titulo.text.strip() for titulo in titulos]
-
-import pandas as pd
 
 df = pd.DataFrame(columns = tabela_titulos)
 

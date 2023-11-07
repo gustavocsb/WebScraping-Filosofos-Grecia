@@ -8,9 +8,9 @@ O script Python faz uma solicitação GET para a página da Wikipedia que lista 
 Os dados extraídos são então visualizados usando o Power BI. Um relatório interativo é criado e incorporado em uma página HTML para fácil visualização.
 
 ## Tecnologias Utilizadas 💻📚
-Python
-Bibliotecas Python: BeautifulSoup, requests, pandas
-Excel
+Python<br>
+Bibliotecas Python: BeautifulSoup, requests, pandas<br>
+Excel<br>
 Power BI
 
 ## Contribuição 🤝
